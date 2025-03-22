@@ -1,0 +1,14 @@
+<header>
+  <h2>shop</h2>
+</header>
+<main>
+  <div>
+    <div class="product" *ngFor="let p of products">
+      <img src="{{p.image}}" alt="{{p.title}}" width="200px" height="200px">
+      <h4>{{p.title}}</h4>
+      <p>Catergory:{{p.category}}</p>
+      <p>price:{{p.price | currency:"INR"}}</p>
+    </div>
+  </div>
+</main>
+<footer>this is footer</footer>
